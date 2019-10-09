@@ -3,7 +3,7 @@ import 'package:taskshare/widgets/widgets.dart';
 class BottomMenu extends StatelessWidget {
   const BottomMenu();
 
-  factory BottomMenu.forDesignTime() => const BottomMenu();
+  
 
   @override
   Widget build(BuildContext context) => BottomAppBar(

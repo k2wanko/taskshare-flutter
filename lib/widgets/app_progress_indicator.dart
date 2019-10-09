@@ -3,7 +3,7 @@ import 'package:taskshare/widgets/widgets.dart';
 class AppProgressIndicator extends StatelessWidget {
   const AppProgressIndicator({this.color});
 
-  factory AppProgressIndicator.forDesignTime() => const AppProgressIndicator();
+  
   final Color color;
 
   @override

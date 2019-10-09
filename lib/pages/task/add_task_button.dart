@@ -6,7 +6,7 @@ import 'task_page_state.dart';
 class AddTaskButton extends StatelessWidget {
   const AddTaskButton();
 
-  factory AddTaskButton.forDesignTime() => const AddTaskButton();
+  
 
   @override
   Widget build(BuildContext context) {

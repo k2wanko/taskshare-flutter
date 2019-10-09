@@ -1,15 +1,16 @@
-import 'package:taskshare/bloc/account_bloc_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:taskshare/bloc/account_bloc.dart';
 import 'package:taskshare/widgets/widgets.dart';
 
 class Setting extends StatelessWidget {
   const Setting();
 
-  factory Setting.forDesignTime() => const Setting();
+  
   static const routeName = '/settings';
 
   @override
   Widget build(BuildContext context) {
-    final accountBloc = AccountBlocProvider.of(context);
+    final accountBloc = Provider.of<AccountBloc>(context);
     return StreamBuilder<User>(
       initialData: accountBloc.user.value,
       stream: accountBloc.user,
