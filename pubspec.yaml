@@ -6,7 +6,10 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  provider:
   cupertino_icons:
+  firebase_core:
+  firebase_analytics:
   firebase_auth:
   google_sign_in:
   scoped_model:

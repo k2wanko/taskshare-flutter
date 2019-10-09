@@ -55,14 +55,14 @@ class GoogleAuthenticator implements Authenticator {
     _state.add(AccountState.signingIn);
     final gAccount = await _googleSignIn.signIn();
     final gAuth = await gAccount.authentication;
-    final firUser = await _auth.signInWithCredential(
+    final res = await _auth.signInWithCredential(
       GoogleAuthProvider.getCredential(
         idToken: gAuth.idToken,
         accessToken: gAuth.accessToken,
       ),
     );
-    logger.info(firUser);
-    return User.fromFirUser(firUser);
+    logger.info(res.user);
+    return User.fromFirUser(res.user);
   }
 
   @override
